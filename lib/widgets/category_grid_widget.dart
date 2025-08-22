@@ -10,8 +10,24 @@ class CategoryGridWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    // the widget should be made tappable
-    throw UnimplementedError();
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [category.color, category.color.withAlpha(0)],
+          begin: AlignmentGeometry.topLeft,
+          end: AlignmentGeometry.bottomRight,
+        ),
+        border: BoxBorder.all(color: Colors.white),
+      ),
+      child: Center(
+        child: Text(
+          category.title,
+          style: Theme.of(context).textTheme.titleLarge!.copyWith(
+            color: Theme.of(context).colorScheme.onPrimaryContainer,
+          ),
+          textAlign: TextAlign.center,
+        ),
+      ),
+    );
   }
 }

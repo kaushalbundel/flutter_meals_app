@@ -2,5 +2,5 @@
 
 # Features
 
-- View different recipies
-- Filter different recipies using recipe category
+- View different recipes
+- Filter different recipes using recipe category
