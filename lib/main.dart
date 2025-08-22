@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:meals/screens/catagories.dart';
 
 // setting broad theme
 final theme = ThemeData(
   colorScheme: ColorScheme.fromSeed(
-    seedColor: Color.fromARGB(255, 131, 57, 0),
+    seedColor: const Color.fromARGB(255, 131, 57, 0),
     brightness: Brightness.dark,
   ),
   textTheme: GoogleFonts.latoTextTheme(),
@@ -20,6 +21,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Flutter Demo', theme: theme, home: ,);
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: theme,
+      home: const CategoriesScreen(),
+    );
   }
 }
