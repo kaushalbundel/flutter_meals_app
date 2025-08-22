@@ -11,6 +11,7 @@ class CategoryGridWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
+    // the widget should be made tappable
     throw UnimplementedError();
   }
 }
